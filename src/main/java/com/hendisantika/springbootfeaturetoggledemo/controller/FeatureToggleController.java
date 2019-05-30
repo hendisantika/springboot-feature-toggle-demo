@@ -31,4 +31,22 @@ public class FeatureToggleController {
                 .setFeatureState(new FeatureState(MyFeatures.valueOf(name), resource.isActive()));
         return ResponseEntity.ok(new ToggleFeature(name, MyFeatures.valueOf(name).isActive()));
     }
+
+    @RequestMapping(value = "/featureToggles", method = RequestMethod.GET)
+    public ResponseEntity<StringBuffer> sayHello() {
+        StringBuffer sb = new StringBuffer();
+
+        if (manager.isActive(MyFeatures.FEATURE_ONE)) {
+            sb.append("FEATURE_ONE is enabled");
+        } else {
+            sb.append("FEATURE_ONE is not enabled");
+        }
+
+        if (manager.isActive(MyFeatures.FEATURE_TWO)) {
+            sb.append("\nFEATURE_TWO is enabled");
+        } else {
+            sb.append("\nFEATURE_TWO is not enabled");
+        }
+        return ResponseEntity.ok(sb);
+    }
 }

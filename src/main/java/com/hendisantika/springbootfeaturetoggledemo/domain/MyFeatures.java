@@ -1,4 +1,4 @@
-package com.hendisantika.springbootfeaturetoggledemo;
+package com.hendisantika.springbootfeaturetoggledemo.domain;
 
 import org.togglz.core.Feature;
 import org.togglz.core.annotation.Label;

@@ -1,4 +1,4 @@
-package com.hendisantika.springbootfeaturetoggledemo;
+package com.hendisantika.springbootfeaturetoggledemo.domain;
 
 /**
  * Created by IntelliJ IDEA.

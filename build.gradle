@@ -16,7 +16,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    compile("org.togglz:togglz-console:2.6.1.Final")
+    compile("org.togglz:togglz-console:4.4.0")
     compile("org.togglz:togglz-spring-security:4.4.0")
     compile group: 'org.togglz', name: 'togglz-mongodb', version: '2.6.1.Final'
     compile("com.github.heneke.thymeleaf:thymeleaf-extras-togglz:2.0.1.RELEASE")
